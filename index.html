@@ -6,14 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de mensagens</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
     </head>
     
+    <header>
+        <img src="Vector.png">
+    
+    
+    </header>
+    
     <body>
-    <input type="text" name="input" placeholder="Digite aqui..." maxlength="50" size="50" autofocus>
-    <input type="text" name="resultado" maxlength="50" size="50">
-    <br> <br>
-    <button type="button">Encriptografar mensagem</button>
-    <button type="button">Desencriptografar mensagem</button>
+        <main>
+            
+            
+            <input type="text" id="input1"class="input1"input type="text" placeholder="Digite aqui..." maxlength="50" size="50" autofocus>
+            <br> <br>
+            <input type="text" id="input2" class="input2" maxlength="50" size="50">
+            <label class="buttons">
+                <p>Apenas letras maiúsculas e sem acento!</p>
+                <button  class="b1" onclick="validaMensagem()">Criptografar</button>
+                <button clasS="b2"  onclick="" >Descriptografar</button>
+            </label>
+                <div id="sem-nada">
+                    <img src="joia.png" class="joia">
+                    <p class="sem-mensagem">Nenhuma mensagem encontrada</p>
+                    <p class=sem-mensagem2>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+        </main>
+
     </body>
 
     <footer>
@@ -27,6 +49,7 @@
 
     </footer>
 
+    <script src="js.js"></script>
 
 
 
@@ -36,6 +59,5 @@
 
 
 
-
-
-    </html>
+    
+</html>

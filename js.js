@@ -4,6 +4,9 @@ console.log("js rodando");
 var input1 = document.querySelector(".input1");
 var input2 = document.querySelector(".input2");
 
+var btn = document.getElementById("b1");
+
+
 var semNada = document.getElementById('sem-nada');
 
 input1.addEventListener("keyup", esconderMsg);
@@ -18,7 +21,9 @@ function esconderMsg () {
 		semNada.style.visibility='visible'
 		input2.style.visibility='hidden'
 	}
-
-
 }
 
+addEventListener("keyup", function changeValue() {
+	document.getElementById("input2").innerHTML = input1.value;
+
+});
